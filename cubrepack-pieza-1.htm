@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es-MX"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CubrePack | Protección de superficies en obra</title>
+  <meta name="description" content="Artículo interactivo de CubrePack sobre protección de superficies en obra, costos de retrabajo y protocolos de entrega.">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      background: #ffffff;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #ffffff;
+    }
+    img, svg, video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+<!-- CubrePack — Artículo SEO interactivo -->
+<!-- Pegar en WordPress > Bloque HTML personalizado -->
+<!-- Fuente externa: Poppins via Google Fonts (ya incluida abajo) -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="cubrepack-pieza-1_files/css2_7_mZ.css">
+<link rel="stylesheet" href="cubrepack-pieza-1_files/tabler-icons.min_7_mZ.css">
+
+<article id="cpv">
+<style>
+#cpv{--r:#E24B4A;--r50:#FCEBEB;--r100:#F7C1C1;--r200:#F09595;--r600:#A32D2D;--r800:#791F1F;--g:#3B6D11;--g50:#EAF3DE;--g800:#27500A;--a50:#FAEEDA;--a800:#633806;--gray:#3C373B;--gray2:#6F6A6D;--gray3:#B4B2A9;--bg:#F7F7F7;--white:#fff;--line:#E8E8E8;font-family:'Poppins',Arial,sans-serif;color:var(--gray);max-width:900px;margin:0 auto;padding:3rem 1.25rem 5rem}
+#cpv *{box-sizing:border-box;margin:0;padding:0}
+#cpv h1{font-size:clamp(28px,5vw,52px);font-weight:600;line-height:1.08;letter-spacing:-.04em;margin-bottom:1rem}
+#cpv h2{font-size:clamp(20px,3.5vw,34px);font-weight:600;line-height:1.15;letter-spacing:-.03em;margin:3rem 0 1rem;padding-left:1rem;border-left:3px solid var(--r);border-radius:0}
+#cpv h3{font-size:clamp(15px,2.5vw,20px);font-weight:600;line-height:1.2;margin:2rem 0 .6rem}
+#cpv p{font-size:16px;line-height:1.75;color:var(--gray2);margin-bottom:1rem}
+#cpv ul{padding-left:1.4em;margin:.5rem 0 1rem}
+#cpv li{font-size:15px;line-height:1.7;color:var(--gray2);margin-bottom:.35rem}
+#cpv hr{border:none;border-top:1px solid var(--line);margin:2.5rem 0}
+.cpv-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--r);margin-bottom:.5rem;display:block}
+.cpv-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.25rem 1.5rem}
+.cpv-surface{background:var(--bg);border-radius:12px;padding:1rem 1.25rem}
+.cpv-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--white);font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;color:var(--gray);cursor:pointer;transition:background .18s,border-color .18s}
+.cpv-btn:hover{background:var(--bg);border-color:var(--gray3)}
+.cpv-btn-primary{background:var(--r);border-color:var(--r);color:var(--white)}
+.cpv-btn-primary:hover{background:var(--r600);border-color:var(--r600);color:var(--white)}
+.cpv-tag{display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px}
+.cpv-tag-danger{background:var(--r50);color:var(--r800)}
+.cpv-tag-success{background:var(--g50);color:var(--g800)}
+.cpv-tag-warn{background:var(--a50);color:var(--a800)}
+.cpv-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cpv-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cpv-metric{background:var(--bg);border-radius:12px;padding:1rem;text-align:center}
+.cpv-metric-num{font-size:clamp(28px,5vw,44px);font-weight:600;letter-spacing:-.03em;color:var(--r);line-height:1;margin-bottom:.4rem}
+.cpv-metric-lbl{font-size:12px;line-height:1.45;color:var(--gray2)}
+.cpv-divider{border:none;border-top:1px solid var(--line);margin:2.5rem 0}
+.cpv-prog-wrap{background:var(--bg);border-radius:99px;height:6px;overflow:hidden;margin:.5rem 0 1rem}
+.cpv-prog-bar{height:100%;border-radius:99px;background:var(--r);transition:width .35s ease;width:0}
+input[type=range]{width:100%;accent-color:var(--r);cursor:pointer}
+select,input[type=number]{width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:10px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;color:var(--gray);background:var(--white);outline:none;transition:border-color .2s}
+select:focus,input:focus{border-color:var(--r)}
+@media(max-width:640px){.cpv-grid-3,.cpv-grid-2{grid-template-columns:1fr}#cpv{padding:2rem 1rem 4rem}}
+@media(prefers-reduced-motion:reduce){.cpv-prog-bar,.cpv-btn{transition:none}}
+</style>
+
+<span class="cpv-label">Protección de superficies en obra — CubrePack</span>
+<h1>El retrabajo más caro de tu proyecto no está en tu presupuesto — todavía</h1>
+<p style="font-size:17px;color:var(--gray);max-width:680px;margin-bottom:1.5rem">Por
+ qué la protección de superficies falla por sistema en la mayoría de 
+obras en México, cuánto cuesta no actuar, y el protocolo mínimo según tu
+ tipo de proyecto.</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2rem">
+  <button class="cpv-btn" onclick="document.getElementById('cpv-calc').scrollIntoView({behavior:'smooth'})">
+    <i class="ti ti-calculator" style="font-size:15px"></i> Calcular mi costo
+  </button>
+  <button class="cpv-btn" onclick="document.getElementById('cpv-comp').scrollIntoView({behavior:'smooth'})">
+    <i class="ti ti-arrows-exchange" style="font-size:15px"></i> Comparar materiales
+  </button>
+  <button class="cpv-btn" onclick="document.getElementById('cpv-chk').scrollIntoView({behavior:'smooth'})">
+    <i class="ti ti-checklist" style="font-size:15px"></i> Checklist de entrega
+  </button>
+</div>
+
+<hr class="cpv-divider">
+
+<h2>El costo en números</h2>
+<p>Cuando el daño ocurre sin protocolo, los costos se acumulan en tres dimensiones que rara vez se calculan juntas.</p>
+<div class="cpv-grid-3" id="cpv-counters" style="margin:1.5rem 0">
+  <div class="cpv-metric">
+    <div class="cpv-metric-num" data-target="3" data-suffix="×">3×</div>
+    <div class="cpv-metric-lbl">Costo de reposición vs costo de protección en pisos de alto valor</div>
+  </div>
+  <div class="cpv-metric">
+    <div class="cpv-metric-num" data-target="14" data-suffix=" días">14 días</div>
+    <div class="cpv-metric-lbl">Retraso promedio en programa por un retrabajo no planeado</div>
+  </div>
+  <div class="cpv-metric">
+    <div class="cpv-metric-num" data-target="87" data-suffix="%">87%</div>
+    <div class="cpv-metric-lbl">De los conflictos de entrega involucran daños sin protocolo documentado</div>
+  </div>
+</div>
+
+<hr class="cpv-divider">
+
+<h2>Por qué falla el sistema, no el equipo</h2>
+<h3>El vacío de responsabilidad entre gremios</h3>
+<p>El instalador de pisos asume que el residente lo gestionará. El 
+residente asume que cada gremio cuidará lo que ya está instalado. El 
+contratista general asume que el residente supervisa. Cuando hay daño, 
+todos tienen razón parcial y nadie tiene responsabilidad clara.</p>
+<p>Este vacío no es una falla de carácter. Es una falla de sistema. Y se resuelve con sistema, no con buenas intenciones.</p>
+
+<h3>La decisión que nadie toma en la cotización inicial</h3>
+<p>La protección de superficies rara vez aparece como línea explícita en
+ la propuesta. Se improvisa en obra con cartón de embalaje, plástico de 
+ferretería y cinta de empaque — materiales que en muchos casos generan 
+sus propios daños: humedad atrapada, residuos de adhesivo, marcas por 
+calor.</p>
+
+<blockquote style="border-left:3px solid var(--r);border-radius:0;margin:2rem 0;padding:.75rem 1.25rem;background:var(--r50)">
+  <p style="font-size:18px;font-weight:600;font-style:italic;color:var(--gray);line-height:1.35;margin-bottom:.4rem">"La
+ protección no falla por falta de materiales. Falla porque nadie la 
+presupuestó, nadie la asignó y nadie tiene autoridad para exigirla."</p>
+  <cite style="font-size:13px;color:var(--r600);font-style:normal;font-weight:600">— Protocolo de obra CubrePack</cite>
+</blockquote>
+
+<hr class="cpv-divider">
+
+<h2>Causas frecuentes — expandir para ver detalle</h2>
+<div id="cpv-acc" style="border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:1rem"><div style="border-top: medium;"><button onclick="cpvAcc(0)" id="ab0" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:500;color:#3C373B;transition:background .18s" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>Polvo de perforación sobre pisos instalados</span><i class="ti ti-chevron-down" id="ai0" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="ab0b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 16px;font-size:14px;color:#6F6A6D;line-height:1.7">El
+ polvo fino actúa como abrasivo cuando alguien camina sobre él. 
+Protocolo: lámina acolchada instalada el mismo día que termina el 
+instalador, antes de que entre cualquier otro gremio.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvAcc(1)" id="ab1" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:500;color:#3C373B;transition:background .18s" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>Condensación bajo plástico en pisos de madera</span><i class="ti ti-chevron-down" id="ai1" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="ab1b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 16px;font-size:14px;color:#6F6A6D;line-height:1.7">El
+ plástico genérico atrapa humedad que mancha, deforma e invalida 
+garantías. Usar únicamente underlayment foam transpirable que permita 
+circulación de aire.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvAcc(2)" id="ab2" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:500;color:#3C373B;transition:background .18s" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>Cinta de alto adhesivo sobre laca nueva</span><i class="ti ti-chevron-down" id="ai2" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="ab2b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 16px;font-size:14px;color:#6F6A6D;line-height:1.7">Al
+ retirar, arranca el acabado — especialmente si estuvo expuesta al 
+calor. Material correcto: film de baja adherencia, verificado en zona no
+ visible antes de cubrir toda la superficie.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvAcc(3)" id="ab3" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:500;color:#3C373B;transition:background .18s" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>Retiro prematuro antes del último gremio</span><i class="ti ti-chevron-down" id="ai3" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="ab3b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 16px;font-size:14px;color:#6F6A6D;line-height:1.7">El
+ error más caro en fase final. La regla es una sola: retirar únicamente 
+cuando el último gremio activo en esa zona terminó y fue verificado por 
+el residente.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvAcc(4)" id="ab4" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:500;color:#3C373B;transition:background .18s" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>Vidrio templado sin protección inmediata</span><i class="ti ti-chevron-down" id="ai4" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="ab4b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 16px;font-size:14px;color:#6F6A6D;line-height:1.7">Un
+ rayón profundo obliga a sustitución total — no se repara. El film debe 
+colocarse el mismo día de instalación, con espuma perimetral en cantos 
+expuestos.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvAcc(5)" id="ab5" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:500;color:#3C373B;transition:background .18s" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>Confundir cera de sacrificio con sellador permanente</span><i class="ti ti-chevron-down" id="ai5" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="ab5b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 16px;font-size:14px;color:#6F6A6D;line-height:1.7">La
+ cera de sacrificio se retira antes de entrega. El sellador es el 
+acabado final. Aplicar sellador como protección provisional arruina la 
+superficie de forma irreversible.</p></div></div></div>
+
+<hr class="cpv-divider">
+
+<h2 id="cpv-calc">Calculadora: proteger vs reponer</h2>
+<p>Mueve los controles para estimar el costo real de no proteger frente al costo de un protocolo correcto.</p>
+
+<div class="cpv-card" style="margin-top:1.25rem">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem 1.5rem;margin-bottom:1.5rem">
+    <div>
+      <label style="font-size:12px;font-weight:600;color:var(--gray2);display:block;margin-bottom:6px">Superficie a proteger</label>
+      <input type="range" min="10" max="500" value="120" step="1" id="ci-m2" oninput="cpvCalc()">
+      <span style="font-size:13px;font-weight:600;color:var(--gray)" id="ci-m2-v">120 m²</span>
+    </div>
+    <div>
+      <label style="font-size:12px;font-weight:600;color:var(--gray2);display:block;margin-bottom:6px">Costo del acabado ($/m²)</label>
+      <input type="range" min="100" max="3000" value="850" step="50" id="ci-precio" oninput="cpvCalc()">
+      <span style="font-size:13px;font-weight:600;color:var(--gray)" id="ci-precio-v">$850</span>
+    </div>
+    <div>
+      <label style="font-size:12px;font-weight:600;color:var(--gray2);display:block;margin-bottom:6px">Tipo de superficie</label>
+      <select id="ci-tipo" onchange="cpvCalc()">
+        <option value="1.0">Porcelanato estándar</option>
+        <option value="1.4" selected="selected">Porcelanato importado</option>
+        <option value="1.8">Madera / parquet</option>
+        <option value="2.2">Vidrio templado</option>
+      </select>
+    </div>
+    <div>
+      <label style="font-size:12px;font-weight:600;color:var(--gray2);display:block;margin-bottom:6px">Días de retraso estimados</label>
+      <input type="range" min="1" max="30" value="7" step="1" id="ci-dias" oninput="cpvCalc()">
+      <span style="font-size:13px;font-weight:600;color:var(--gray)" id="ci-dias-v">7 días</span>
+    </div>
+    <div>
+      <label style="font-size:12px;font-weight:600;color:var(--gray2);display:block;margin-bottom:6px">Costo diario de obra ($/día)</label>
+      <input type="range" min="500" max="20000" value="4500" step="500" id="ci-cdia" oninput="cpvCalc()">
+      <span style="font-size:13px;font-weight:600;color:var(--gray)" id="ci-cdia-v">$4,500</span>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid var(--line);padding-top:1.25rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px">
+    <div class="cpv-surface">
+      <div style="font-size:12px;color:var(--gray2);margin-bottom:4px">Costo de protección</div>
+      <div style="font-size:22px;font-weight:600;color:var(--g)" id="co-prot">$10,200</div>
+    </div>
+    <div class="cpv-surface">
+      <div style="font-size:12px;color:var(--gray2);margin-bottom:4px">Costo de reposición</div>
+      <div style="font-size:22px;font-weight:600;color:var(--r)" id="co-rep">$192,780</div>
+    </div>
+    <div class="cpv-surface">
+      <div style="font-size:12px;color:var(--gray2);margin-bottom:4px">Costo del retraso</div>
+      <div style="font-size:22px;font-weight:600;color:var(--r)" id="co-ret">$31,500</div>
+    </div>
+    <div class="cpv-surface" style="border:2px solid var(--r);background:var(--r50)">
+      <div style="font-size:12px;color:var(--r600);font-weight:600;margin-bottom:4px">Ahorro con protocolo</div>
+      <div style="font-size:22px;font-weight:600;color:var(--r800)" id="co-ahorro">$214,080</div>
+    </div>
+  </div>
+</div>
+
+<hr class="cpv-divider">
+
+<h2>Costo de proteger vs reponer por superficie</h2>
+<div style="display:flex;gap:8px;margin:1rem 0;flex-wrap:wrap" id="cpv-chart-tabs">
+  <button class="cpv-btn cpv-btn-primary" id="ctab-prot" onclick="cpvSwitchChart('prot')">Proteger ($/m²)</button>
+  <button class="cpv-btn" id="ctab-rep" onclick="cpvSwitchChart('rep')">Reponer si hay daño ($/m²)</button>
+</div>
+<div id="cpv-bars" style="margin-top:.75rem;display:flex;flex-direction:column;gap:10px"><div style="display:flex;align-items:center;gap:12px"><div style="font-size:13px;font-weight:500;color:#6F6A6D;min-width:160px;text-align:right;flex-shrink:0">Porcelanato estándar</div><div style="flex:1;height:28px;background:#F7F7F7;border-radius:999px;overflow:hidden;border:1px solid #E8E8E8"><div class="cpv-bar-anim" data-w="47" style="height: 100%; width: 47%; background: rgb(226, 75, 74); border-radius: 999px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; transition: width 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);"><span style="font-size:11px;font-weight:600;color:#fff;white-space:nowrap">$18</span></div></div></div><div style="display:flex;align-items:center;gap:12px"><div style="font-size:13px;font-weight:500;color:#6F6A6D;min-width:160px;text-align:right;flex-shrink:0">Porcelanato importado</div><div style="flex:1;height:28px;background:#F7F7F7;border-radius:999px;overflow:hidden;border:1px solid #E8E8E8"><div class="cpv-bar-anim" data-w="74" style="height: 100%; width: 74%; background: rgb(226, 75, 74); border-radius: 999px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; transition: width 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);"><span style="font-size:11px;font-weight:600;color:#fff;white-space:nowrap">$28</span></div></div></div><div style="display:flex;align-items:center;gap:12px"><div style="font-size:13px;font-weight:500;color:#6F6A6D;min-width:160px;text-align:right;flex-shrink:0">Madera / parquet</div><div style="flex:1;height:28px;background:#F7F7F7;border-radius:999px;overflow:hidden;border:1px solid #E8E8E8"><div class="cpv-bar-anim" data-w="84" style="height: 100%; width: 84%; background: rgb(226, 75, 74); border-radius: 999px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; transition: width 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);"><span style="font-size:11px;font-weight:600;color:#fff;white-space:nowrap">$32</span></div></div></div><div style="display:flex;align-items:center;gap:12px"><div style="font-size:13px;font-weight:500;color:#6F6A6D;min-width:160px;text-align:right;flex-shrink:0">Cancelería aluminio</div><div style="flex:1;height:28px;background:#F7F7F7;border-radius:999px;overflow:hidden;border:1px solid #E8E8E8"><div class="cpv-bar-anim" data-w="58" style="height: 100%; width: 58%; background: rgb(226, 75, 74); border-radius: 999px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; transition: width 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);"><span style="font-size:11px;font-weight:600;color:#fff;white-space:nowrap">$22</span></div></div></div><div style="display:flex;align-items:center;gap:12px"><div style="font-size:13px;font-weight:500;color:#6F6A6D;min-width:160px;text-align:right;flex-shrink:0">Vidrio templado</div><div style="flex:1;height:28px;background:#F7F7F7;border-radius:999px;overflow:hidden;border:1px solid #E8E8E8"><div class="cpv-bar-anim" data-w="100" style="height: 100%; width: 100%; background: rgb(226, 75, 74); border-radius: 999px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; transition: width 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);"><span style="font-size:11px;font-weight:600;color:#fff;white-space:nowrap">$38</span></div></div></div><div style="display:flex;align-items:center;gap:12px"><div style="font-size:13px;font-weight:500;color:#6F6A6D;min-width:160px;text-align:right;flex-shrink:0">Concreto pulido</div><div style="flex:1;height:28px;background:#F7F7F7;border-radius:999px;overflow:hidden;border:1px solid #E8E8E8"><div class="cpv-bar-anim" data-w="37" style="height: 100%; width: 37%; background: rgb(226, 75, 74); border-radius: 999px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; transition: width 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);"><span style="font-size:11px;font-weight:600;color:#fff;white-space:nowrap">$14</span></div></div></div></div>
+
+<hr class="cpv-divider">
+
+<h2 id="cpv-comp">Comparador de materiales</h2>
+<p>Selecciona la alternativa que evalúas para ver la comparación completa.</p>
+<div style="display:flex;align-items:center;gap:12px;margin:1rem 0;flex-wrap:wrap">
+  <label style="font-size:13px;font-weight:600;color:var(--gray2)">Comparar con:</label>
+  <select id="comp-sel" onchange="cpvRenderComp()" style="max-width:240px">
+    <option value="carton" selected="selected">Cartón genérico</option>
+    <option value="plastico">Plástico de ferretería</option>
+    <option value="cinta">Cinta + cartón</option>
+  </select>
+</div>
+<div class="cpv-grid-2" id="cpv-comp-cards" style="margin-top:1rem"><div style="background:#fff;border-radius:16px;border:2px solid #3B6D11;padding:1.25rem 1.5rem"><div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><i class="ti ti-shield-check" style="font-size:18px;color:#3B6D11"></i><span style="font-size:15px;font-weight:600;color:#3C373B">Film CubrePack</span><span style="font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#EAF3DE;color:#27500A;margin-left:auto">Recomendado</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Sin residuo de adhesivo</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#EAF3DE;color:#27500A">Garantizado</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Transpirable</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#EAF3DE;color:#27500A">Foam PE</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Compatible con vidrio templado</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#EAF3DE;color:#27500A">Film anti-rayadura</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Tiempo máx. en superficie</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#EAF3DE;color:#27500A">90 días</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Costo por m²</span><span style="font-size:13px;font-weight:500;color:#3C373B">$18–38</span></div></div><div style="background:#fff;border-radius:16px;border:1px solid #E8E8E8;padding:1.25rem 1.5rem"><div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><i class="ti ti-x" style="font-size:18px;color:#E24B4A"></i><span style="font-size:15px;font-weight:600;color:#3C373B">Cartón genérico</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Sin residuo de adhesivo</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#FCEBEB;color:#791F1F">No aplica — transfiere manchas</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Transpirable</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#FCEBEB;color:#791F1F">Absorbe y retiene humedad</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Compatible con vidrio templado</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#FCEBEB;color:#791F1F">No recomendado — abrasivo</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Tiempo máx. en superficie</span><span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#FAEEDA;color:#633806">5–10 días</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8"><span style="font-size:13px;color:#6F6A6D">Costo por m²</span><span style="font-size:13px;font-weight:500;color:#3C373B">$5–8</span></div></div></div>
+
+<hr class="cpv-divider">
+
+<h2>Protocolo en 6 pasos — marca según avanzas</h2>
+<div style="display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-top:1rem">
+  <span style="color:var(--gray2)" id="steps-lbl">0 de 6 pasos completados</span>
+  <span style="color:var(--r)" id="steps-pct">0%</span>
+</div>
+<div class="cpv-prog-wrap"><div class="cpv-prog-bar" id="steps-bar"></div></div>
+<div id="steps-list" style="display:flex;flex-direction:column;gap:8px"><div id="stp0" data-done="0" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleStep(0)"><i class="ti ti-circle" id="sti0" style="font-size:20px;margin-top:1px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><div><p style="font-size:14px;font-weight:600;color:#3C373B;margin-bottom:2px">Incluir protección en cotización inicial</p><p style="font-size:13px;color:#6F6A6D;line-height:1.55;margin-bottom:0">Como línea explícita, no diluida en costos generales.</p></div></div><div id="stp1" data-done="0" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleStep(1)"><i class="ti ti-circle" id="sti1" style="font-size:20px;margin-top:1px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><div><p style="font-size:14px;font-weight:600;color:#3C373B;margin-bottom:2px">Asignar responsable con autoridad real</p><p style="font-size:13px;color:#6F6A6D;line-height:1.55;margin-bottom:0">El residente de obra con facultad para exigir el protocolo a cada subcontratista.</p></div></div><div id="stp2" data-done="0" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleStep(2)"><i class="ti ti-circle" id="sti2" style="font-size:20px;margin-top:1px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><div><p style="font-size:14px;font-weight:600;color:#3C373B;margin-bottom:2px">Mapear zonas sensibles y superficies prioritarias</p><p style="font-size:13px;color:#6F6A6D;line-height:1.55;margin-bottom:0">Pisos, vidrios, cancelería y carpintería van primero.</p></div></div><div id="stp3" data-done="0" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleStep(3)"><i class="ti ti-circle" id="sti3" style="font-size:20px;margin-top:1px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><div><p style="font-size:14px;font-weight:600;color:#3C373B;margin-bottom:2px">Verificar compatibilidad antes de aplicar</p><p style="font-size:13px;color:#6F6A6D;line-height:1.55;margin-bottom:0">Prueba en zona no visible. Nunca cinta de alto adhesivo sobre laca nueva.</p></div></div><div id="stp4" data-done="0" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleStep(4)"><i class="ti ti-circle" id="sti4" style="font-size:20px;margin-top:1px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><div><p style="font-size:14px;font-weight:600;color:#3C373B;margin-bottom:2px">Documentar en contrato de cada subcontratista</p><p style="font-size:13px;color:#6F6A6D;line-height:1.55;margin-bottom:0">Cláusula: qué protege, cuándo, quién provee, quién autoriza el retiro.</p></div></div><div id="stp5" data-done="0" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleStep(5)"><i class="ti ti-circle" id="sti5" style="font-size:20px;margin-top:1px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><div><p style="font-size:14px;font-weight:600;color:#3C373B;margin-bottom:2px">Criterio de retiro: último gremio verificado</p><p style="font-size:13px;color:#6F6A6D;line-height:1.55;margin-bottom:0">No "cuando toca por secuencia" — solo cuando el último gremio activo terminó e fue inspeccionado.</p></div></div></div>
+
+<hr class="cpv-divider">
+
+<h2 id="cpv-chk">Checklist de inspección previa a entrega</h2>
+<div style="display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-top:1rem">
+  <span style="color:var(--gray2)" id="chk-lbl">0 de 8 verificados</span>
+  <span style="color:var(--g)" id="chk-pct">0%</span>
+</div>
+<div class="cpv-prog-wrap"><div class="cpv-prog-bar" id="chk-bar" style="background:var(--g)"></div></div>
+<div id="chk-list" style="display:flex;flex-direction:column;gap:8px;margin-top:.25rem"><div id="chkp0" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(0)"><i class="ti ti-square" id="chi0" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt0" style="font-size:14px;color:#3C373B;line-height:1.5">Todos los gremios en la zona terminaron y firmaron avance</span></div><div id="chkp1" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(1)"><i class="ti ti-square" id="chi1" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt1" style="font-size:14px;color:#3C373B;line-height:1.5">Pisos: sin manchas, rayones ni piezas flojas bajo la protección</span></div><div id="chkp2" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(2)"><i class="ti ti-square" id="chi2" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt2" style="font-size:14px;color:#3C373B;line-height:1.5">Vidrios: sin impactos ni rayones profundos en el film</span></div><div id="chkp3" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(3)"><i class="ti ti-square" id="chi3" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt3" style="font-size:14px;color:#3C373B;line-height:1.5">Cancelería: sin mortero endurecido ni rayones en perfiles visibles</span></div><div id="chkp4" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(4)"><i class="ti ti-square" id="chi4" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt4" style="font-size:14px;color:#3C373B;line-height:1.5">Carpintería: sin humedad, golpes ni residuo de adhesivo de cinta</span></div><div id="chkp5" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(5)"><i class="ti ti-square" id="chi5" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt5" style="font-size:14px;color:#3C373B;line-height:1.5">Muros pintados: sin roces ni salpicaduras en zonas de paso</span></div><div id="chkp6" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(6)"><i class="ti ti-square" id="chi6" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt6" style="font-size:14px;color:#3C373B;line-height:1.5">Protecciones retiradas completamente sin residuos de adhesivo</span></div><div id="chkp7" data-done="0" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid rgb(232, 232, 232); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s;" onclick="cpvToggleChk(7)"><i class="ti ti-square" id="chi7" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i><span id="chktxt7" style="font-size:14px;color:#3C373B;line-height:1.5">Registro fotográfico del estado antes y después del retiro</span></div></div>
+
+<hr class="cpv-divider">
+
+<h2>Preguntas frecuentes</h2>
+<div id="cpv-faq" style="border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:1rem"><div style="border-top: medium;"><button onclick="cpvFaq(0)" id="fb0" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:600;color:#3C373B" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>¿Cuándo es el mejor momento para implementar protección de superficies?</span><i class="ti ti-chevron-down" id="fi0" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="fb0b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 18px;font-size:14px;color:#6F6A6D;line-height:1.75">El
+ momento óptimo es en la fase de planeación y cotización, antes de que 
+entren los primeros gremios. Si ya está en etapa de instalaciones o 
+acabados, el protocolo sigue siendo aplicable, pero la ventana para 
+proteger lo más costoso se reduce con cada semana que pasa.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvFaq(1)" id="fb1" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:600;color:#3C373B" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>¿Qué pasa si el subcontratista que causó el daño no acepta la responsabilidad?</span><i class="ti ti-chevron-down" id="fi1" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="fb1b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 18px;font-size:14px;color:#6F6A6D;line-height:1.75">Sin
+ protocolo documentado, no hay forma de asignar responsabilidad 
+operativa. Con cláusula escrita en el contrato hay un referente concreto
+ al que recurrir. El documento define quién tiene razón con base en 
+hechos verificables, no en memoria.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvFaq(2)" id="fb2" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:600;color:#3C373B" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>¿Vale la pena proteger en obras pequeñas o de presupuesto ajustado?</span><i class="ti ti-chevron-down" id="fi2" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="fb2b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 18px;font-size:14px;color:#6F6A6D;line-height:1.75">En
+ proyectos pequeños, un solo retrabajo no planeado puede representar un 
+porcentaje mayor del margen total que en uno grande. El protocolo mínimo
+ no requiere materiales costosos: requiere definir qué se protege, con 
+qué y quién es responsable.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvFaq(3)" id="fb3" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:600;color:#3C373B" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>¿Cómo verifico la compatibilidad del material con el acabado?</span><i class="ti ti-chevron-down" id="fi3" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="fb3b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 18px;font-size:14px;color:#6F6A6D;line-height:1.75">La
+ regla: verificar compatibilidad antes de aplicar, optar por materiales 
+de baja adherencia en acabados de alto valor y hacer una prueba en zona 
+no visible antes de cubrir la superficie completa. Nunca cinta de alto 
+adhesivo sobre laca nueva.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvFaq(4)" id="fb4" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:600;color:#3C373B" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>¿Qué diferencia hay entre contrato llave en mano y por administración?</span><i class="ti ti-chevron-down" id="fi4" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="fb4b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 18px;font-size:14px;color:#6F6A6D;line-height:1.75">En
+ llave en mano, el contratista general responde por el estado de los 
+acabados en la entrega, independientemente del subcontratista que causó 
+el daño. En administración, la responsabilidad es ambigua: sin cláusula 
+explícita en cada contrato, el daño se convierte en conflicto entre 
+gremios que puede tardar semanas en resolverse.</p></div></div><div style="border-top: 1px solid rgb(232, 232, 232);"><button onclick="cpvFaq(5)" id="fb5" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:600;color:#3C373B" onmouseover="this.style.background='#F7F7F7'" onmouseout="this.style.background='transparent'"><span>¿Con cuánta anticipación debo pedir los materiales de protección?</span><i class="ti ti-chevron-down" id="fi5" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i></button><div id="fb5b" style="max-height:0;overflow:hidden;transition:max-height .32s ease"><p style="padding:0 20px 18px;font-size:14px;color:#6F6A6D;line-height:1.75">Para
+ obras residenciales estándar, 5 a 7 días hábiles antes de la 
+instalación del primer acabado fino. En obras comerciales con 
+superficies especiales, 10 a 15 días hábiles para garantizar 
+disponibilidad del material correcto.</p></div></div></div>
+
+<hr class="cpv-divider">
+
+<div style="background:var(--gray);border-radius:20px;padding:2.5rem;text-align:center;margin-top:2rem">
+  <h2 style="color:#fff;border-left:none;padding-left:0;margin-top:0">¿Estás planeando o ejecutando un proyecto de construcción o acabados?</h2>
+  <p style="color:rgba(255,255,255,.7);font-size:15px;max-width:480px;margin:0 auto 1.5rem">Define desde ahora qué superficies requieren protección, quién es responsable y qué materiales aplican para tu tipo de obra.</p>
+  <a href="https://franco-dmt.github.io/contacto/" style="display:inline-flex;align-items:center;gap:8px;background:var(--r);color:#fff;text-decoration:none;font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;padding:14px 28px;border-radius:999px;transition:background .2s">
+    Habla con un especialista
+    <i class="ti ti-arrow-right" style="font-size:16px"></i>
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"¿Cuándo es el mejor momento para implementar protección de superficies en obra?","acceptedAnswer":{"@type":"Answer","text":"El momento óptimo es en la fase de planeación y cotización, antes de que entren los primeros gremios. Si ya está en etapa de instalaciones o acabados, el protocolo sigue siendo aplicable, pero la ventana para proteger lo más costoso se reduce con cada semana que pasa."}},
+    {"@type":"Question","name":"¿Qué pasa si el subcontratista que causó el daño no acepta la responsabilidad?","acceptedAnswer":{"@type":"Answer","text":"Sin protocolo documentado, no hay forma de asignar responsabilidad operativa. Con cláusula escrita en el contrato hay un referente concreto al que recurrir. El documento no elimina el conflicto, pero define quién tiene razón con base en hechos verificables."}},
+    {"@type":"Question","name":"¿Vale la pena proteger en obras pequeñas o de presupuesto ajustado?","acceptedAnswer":{"@type":"Answer","text":"En proyectos pequeños, un solo retrabajo no planeado puede representar un porcentaje mayor del margen total que en uno grande. El protocolo mínimo no requiere materiales costosos: requiere definir qué se protege, con qué y quién es responsable."}},
+    {"@type":"Question","name":"¿Cómo verifico la compatibilidad del material con el acabado a proteger?","acceptedAnswer":{"@type":"Answer","text":"Verificar compatibilidad antes de aplicar, optar por materiales de baja adherencia en acabados de alto valor y hacer una prueba en zona no visible antes de cubrir la superficie completa."}},
+    {"@type":"Question","name":"¿Qué diferencia hay entre contrato llave en mano y por administración?","acceptedAnswer":{"@type":"Answer","text":"En llave en mano, el contratista general responde por el estado de los acabados en la entrega. En administración, la responsabilidad es ambigua: sin cláusula explícita en cada contrato, el daño se convierte en conflicto entre gremios."}},
+    {"@type":"Question","name":"¿Con cuánta anticipación pido los materiales de protección?","acceptedAnswer":{"@type":"Answer","text":"Para obras residenciales estándar, 5 a 7 días hábiles antes de la instalación del primer acabado fino. En obras comerciales grandes, 10 a 15 días hábiles de anticipación."}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+var $ = function(id){return document.getElementById(id);};
+
+var accData=[
+  {q:"Polvo de perforación sobre pisos instalados",a:"El polvo fino actúa como abrasivo cuando alguien camina sobre él. Protocolo: lámina acolchada instalada el mismo día que termina el instalador, antes de que entre cualquier otro gremio."},
+  {q:"Condensación bajo plástico en pisos de madera",a:"El plástico genérico atrapa humedad que mancha, deforma e invalida garantías. Usar únicamente underlayment foam transpirable que permita circulación de aire."},
+  {q:"Cinta de alto adhesivo sobre laca nueva",a:"Al retirar, arranca el acabado — especialmente si estuvo expuesta al calor. Material correcto: film de baja adherencia, verificado en zona no visible antes de cubrir toda la superficie."},
+  {q:"Retiro prematuro antes del último gremio",a:"El error más caro en fase final. La regla es una sola: retirar únicamente cuando el último gremio activo en esa zona terminó y fue verificado por el residente."},
+  {q:"Vidrio templado sin protección inmediata",a:"Un rayón profundo obliga a sustitución total — no se repara. El film debe colocarse el mismo día de instalación, con espuma perimetral en cantos expuestos."},
+  {q:"Confundir cera de sacrificio con sellador permanente",a:"La cera de sacrificio se retira antes de entrega. El sellador es el acabado final. Aplicar sellador como protección provisional arruina la superficie de forma irreversible."}
+];
+var accEl=$('cpv-acc');
+accData.forEach(function(item,i){
+  var div=document.createElement('div');
+  div.style.borderTop=i===0?'none':'1px solid #E8E8E8';
+  div.innerHTML='<button onclick="cpvAcc('+i+')" id="ab'+i+'" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:500;color:#3C373B;transition:background .18s" onmouseover="this.style.background=\'#F7F7F7\'" onmouseout="this.style.background=\'transparent\'">'
+    +'<span>'+item.q+'</span>'
+    +'<i class="ti ti-chevron-down" id="ai'+i+'" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i>'
+    +'</button>'
+    +'<div id="ab'+i+'b" style="max-height:0;overflow:hidden;transition:max-height .32s ease">'
+    +'<p style="padding:0 20px 16px;font-size:14px;color:#6F6A6D;line-height:1.7">'+item.a+'</p>'
+    +'</div>';
+  accEl.appendChild(div);
+});
+window.cpvAcc=function(i){
+  var body=$('ab'+i+'b'),icon=$('ai'+i);
+  var open=body.style.maxHeight&&body.style.maxHeight!=='0px';
+  for(var j=0;j<6;j++){
+    var b=$('ab'+j+'b'),ic=$('ai'+j);
+    if(b){b.style.maxHeight='0';}
+    if(ic){ic.style.transform='';}
+  }
+  if(!open){body.style.maxHeight=body.scrollHeight+'px';icon.style.transform='rotate(180deg)';}
+};
+
+function fmt(n){return '$'+Math.round(n).toLocaleString('es-MX');}
+window.cpvCalc=function(){
+  var m2=+$('ci-m2').value,precio=+$('ci-precio').value,tipo=+$('ci-tipo').value,dias=+$('ci-dias').value,cdia=+$('ci-cdia').value;
+  $('ci-m2-v').textContent=m2+' m²';
+  $('ci-precio-v').textContent='$'+precio.toLocaleString('es-MX');
+  $('ci-dias-v').textContent=dias+' días';
+  $('ci-cdia-v').textContent='$'+cdia.toLocaleString('es-MX');
+  var prot=m2*precio*0.10,rep=m2*precio*tipo*1.35,ret=dias*cdia,ahorro=rep+ret-prot;
+  $('co-prot').textContent=fmt(prot);
+  $('co-rep').textContent=fmt(rep);
+  $('co-ret').textContent=fmt(ret);
+  $('co-ahorro').textContent=ahorro>0?fmt(ahorro):'$0';
+};
+cpvCalc();
+
+var chartMode='prot';
+var chartData={
+  prot:{labels:['Porcelanato estándar','Porcelanato importado','Madera / parquet','Cancelería aluminio','Vidrio templado','Concreto pulido'],data:[18,28,32,22,38,14],color:'#E24B4A'},
+  rep:{labels:['Porcelanato estándar','Porcelanato importado','Madera / parquet','Cancelería aluminio','Vidrio templado','Concreto pulido'],data:[630,1800,1375,1225,2400,900],color:'#A32D2D'}
+};
+function renderBars(mode){
+  var d=chartData[mode];
+  var max=Math.max.apply(null,d.data);
+  var html='';
+  d.data.forEach(function(val,i){
+    var pct=Math.round((val/max)*100);
+    html+='<div style="display:flex;align-items:center;gap:12px">'
+      +'<div style="font-size:13px;font-weight:500;color:#6F6A6D;min-width:160px;text-align:right;flex-shrink:0">'+d.labels[i]+'</div>'
+      +'<div style="flex:1;height:28px;background:#F7F7F7;border-radius:999px;overflow:hidden;border:1px solid #E8E8E8">'
+      +'<div class="cpv-bar-anim" data-w="'+pct+'" style="height:100%;width:0;background:'+d.color+';border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;transition:width 0.9s cubic-bezier(.25,.8,.25,1)">'
+      +'<span style="font-size:11px;font-weight:600;color:#fff;white-space:nowrap">$'+val.toLocaleString('es-MX')+'</span>'
+      +'</div></div></div>';
+  });
+  $('cpv-bars').innerHTML=html;
+  requestAnimationFrame(function(){requestAnimationFrame(function(){
+    document.querySelectorAll('#cpv-bars .cpv-bar-anim').forEach(function(b){
+      b.style.width=b.dataset.w+'%';
+    });
+  });});
+}
+window.cpvSwitchChart=function(mode){
+  chartMode=mode;
+  var btnP=$('ctab-prot'),btnR=$('ctab-rep');
+  if(mode==='prot'){
+    btnP.style.cssText+='background:#E24B4A;border-color:#E24B4A;color:#fff';
+    btnR.style.cssText+='background:transparent;border-color:#E8E8E8;color:#3C373B';
+  } else {
+    btnR.style.cssText+='background:#E24B4A;border-color:#E24B4A;color:#fff';
+    btnP.style.cssText+='background:transparent;border-color:#E8E8E8;color:#3C373B';
+  }
+  renderBars(mode);
+};
+renderBars('prot');
+
+var barObserver=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){renderBars(chartMode);barObserver.disconnect();}});
+},{threshold:0.2});
+barObserver.observe($('cpv-bars'));
+
+var compData={
+  carton:{name:'Cartón genérico',rows:[
+    {k:'Sin residuo de adhesivo',v1:'Garantizado',s1:'success',v2:'No aplica — transfiere manchas',s2:'danger'},
+    {k:'Transpirable',v1:'Foam PE',s1:'success',v2:'Absorbe y retiene humedad',s2:'danger'},
+    {k:'Compatible con vidrio templado',v1:'Film anti-rayadura',s1:'success',v2:'No recomendado — abrasivo',s2:'danger'},
+    {k:'Tiempo máx. en superficie',v1:'90 días',s1:'success',v2:'5–10 días',s2:'warn'},
+    {k:'Costo por m²',v1:'$18–38',s1:'',v2:'$5–8',s2:''}
+  ]},
+  plastico:{name:'Plástico de ferretería',rows:[
+    {k:'Transpirable',v1:'Foam PE',s1:'success',v2:'Genera condensación',s2:'danger'},
+    {k:'Compatible madera / parquet',v1:'Transpirable',s1:'success',v2:'Mancha y deforma',s2:'danger'},
+    {k:'Sin residuo de adhesivo',v1:'Garantizado',s1:'success',v2:'No aplica',s2:'warn'},
+    {k:'Tiempo máx. en superficie',v1:'90 días',s1:'success',v2:'15–20 días',s2:'warn'},
+    {k:'Costo por m²',v1:'$18–38',s1:'',v2:'$3–6',s2:''}
+  ]},
+  cinta:{name:'Cinta + cartón',rows:[
+    {k:'Sin residuo de adhesivo',v1:'Garantizado',s1:'success',v2:'Deja residuo permanente',s2:'danger'},
+    {k:'Compatible con laca nueva',v1:'Baja adherencia',s1:'success',v2:'Arranca el acabado',s2:'danger'},
+    {k:'Compatible cancelería PVC',v1:'Film especializado',s1:'success',v2:'Marca permanente en perfil',s2:'danger'},
+    {k:'Tiempo máx. en superficie',v1:'90 días',s1:'success',v2:'7–14 días',s2:'warn'},
+    {k:'Costo por m²',v1:'$18–38',s1:'',v2:'$4–7',s2:''}
+  ]}
+};
+window.cpvRenderComp=function(){
+  var key=$('comp-sel').value,d=compData[key];
+  function tag(val,s){
+    if(!s)return '<span style="font-size:13px;font-weight:500;color:#3C373B">'+val+'</span>';
+    var bg=s==='success'?'#EAF3DE':s==='danger'?'#FCEBEB':'#FAEEDA';
+    var tc=s==='success'?'#27500A':s==='danger'?'#791F1F':'#633806';
+    return '<span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:'+bg+';color:'+tc+'">'+val+'</span>';
+  }
+  function makeCard(title,isOurs,rows){
+    var border=isOurs?'border:2px solid #3B6D11':'border:1px solid #E8E8E8';
+    var rows_html=rows.map(function(r){
+      return '<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #E8E8E8">'
+        +'<span style="font-size:13px;color:#6F6A6D">'+r.k+'</span>'
+        +tag(isOurs?r.v1:r.v2, isOurs?r.s1:r.s2)
+        +'</div>';
+    }).join('');
+    var icon=isOurs?'shield-check':'x';
+    var icolor=isOurs?'#3B6D11':'#E24B4A';
+    var badge=isOurs?'<span style="font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;background:#EAF3DE;color:#27500A;margin-left:auto">Recomendado</span>':'';
+    return '<div style="background:#fff;border-radius:16px;'+border+';padding:1.25rem 1.5rem">'
+      +'<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">'
+      +'<i class="ti ti-'+icon+'" style="font-size:18px;color:'+icolor+'"></i>'
+      +'<span style="font-size:15px;font-weight:600;color:#3C373B">'+title+'</span>'
+      +badge
+      +'</div>'
+      +rows_html
+      +'</div>';
+  }
+  $('cpv-comp-cards').innerHTML=makeCard('Film CubrePack',true,d.rows)+makeCard(d.name,false,d.rows);
+};
+cpvRenderComp();
+
+var stepsData=[
+  {t:'Incluir protección en cotización inicial',d:'Como línea explícita, no diluida en costos generales.'},
+  {t:'Asignar responsable con autoridad real',d:'El residente de obra con facultad para exigir el protocolo a cada subcontratista.'},
+  {t:'Mapear zonas sensibles y superficies prioritarias',d:'Pisos, vidrios, cancelería y carpintería van primero.'},
+  {t:'Verificar compatibilidad antes de aplicar',d:'Prueba en zona no visible. Nunca cinta de alto adhesivo sobre laca nueva.'},
+  {t:'Documentar en contrato de cada subcontratista',d:'Cláusula: qué protege, cuándo, quién provee, quién autoriza el retiro.'},
+  {t:'Criterio de retiro: último gremio verificado',d:'No "cuando toca por secuencia" — solo cuando el último gremio activo terminó e fue inspeccionado.'}
+];
+var stepsList=$('steps-list');
+stepsData.forEach(function(s,i){
+  var d=document.createElement('div');
+  d.id='stp'+i;d.dataset.done='0';
+  d.style.cssText='display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border:1px solid #E8E8E8;border-radius:12px;cursor:pointer;transition:background .2s,border-color .2s';
+  d.setAttribute('onclick','cpvToggleStep('+i+')');
+  d.innerHTML='<i class="ti ti-circle" id="sti'+i+'" style="font-size:20px;margin-top:1px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i>'
+    +'<div><p style="font-size:14px;font-weight:600;color:#3C373B;margin-bottom:2px">'+s.t+'</p>'
+    +'<p style="font-size:13px;color:#6F6A6D;line-height:1.55;margin-bottom:0">'+s.d+'</p></div>';
+  stepsList.appendChild(d);
+});
+window.cpvToggleStep=function(i){
+  var el=$('stp'+i);
+  el.dataset.done=el.dataset.done==='1'?'0':'1';
+  var done=0;
+  stepsData.forEach(function(_,j){
+    var e=$('stp'+j),ic=$('sti'+j);
+    if(e.dataset.done==='1'){
+      done++;
+      e.style.background='#EAF3DE';e.style.borderColor='#639922';
+      ic.className='ti ti-circle-check';ic.style.color='#3B6D11';
+    } else {
+      e.style.background='';e.style.borderColor='#E8E8E8';
+      ic.className='ti ti-circle';ic.style.color='#B4B2A9';
+    }
+  });
+  var pct=Math.round((done/stepsData.length)*100);
+  $('steps-bar').style.width=pct+'%';
+  $('steps-lbl').textContent=done===stepsData.length?'¡Protocolo completo!':done+' de '+stepsData.length+' pasos completados';
+  $('steps-pct').textContent=pct+'%';
+};
+
+var chkItems=[
+  'Todos los gremios en la zona terminaron y firmaron avance',
+  'Pisos: sin manchas, rayones ni piezas flojas bajo la protección',
+  'Vidrios: sin impactos ni rayones profundos en el film',
+  'Cancelería: sin mortero endurecido ni rayones en perfiles visibles',
+  'Carpintería: sin humedad, golpes ni residuo de adhesivo de cinta',
+  'Muros pintados: sin roces ni salpicaduras en zonas de paso',
+  'Protecciones retiradas completamente sin residuos de adhesivo',
+  'Registro fotográfico del estado antes y después del retiro'
+];
+var chkList=$('chk-list');
+chkItems.forEach(function(txt,i){
+  var d=document.createElement('div');
+  d.id='chkp'+i;d.dataset.done='0';
+  d.style.cssText='display:flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid #E8E8E8;border-radius:12px;cursor:pointer;transition:background .2s,border-color .2s';
+  d.setAttribute('onclick','cpvToggleChk('+i+')');
+  d.innerHTML='<i class="ti ti-square" id="chi'+i+'" style="font-size:20px;flex-shrink:0;color:#B4B2A9;transition:color .2s"></i>'
+    +'<span id="chktxt'+i+'" style="font-size:14px;color:#3C373B;line-height:1.5">'+txt+'</span>';
+  chkList.appendChild(d);
+});
+window.cpvToggleChk=function(i){
+  var el=$('chkp'+i),ic=$('chi'+i),tx=$('chktxt'+i);
+  el.dataset.done=el.dataset.done==='1'?'0':'1';
+  var done=0;
+  chkItems.forEach(function(_,j){
+    var e=$('chkp'+j),ic2=$('chi'+j),t=$('chktxt'+j);
+    if(e.dataset.done==='1'){
+      done++;
+      e.style.background='#EAF3DE';e.style.borderColor='#639922';
+      ic2.className='ti ti-square-check';ic2.style.color='#3B6D11';
+      t.style.textDecoration='line-through';t.style.color='#B4B2A9';
+    } else {
+      e.style.background='';e.style.borderColor='#E8E8E8';
+      ic2.className='ti ti-square';ic2.style.color='#B4B2A9';
+      t.style.textDecoration='none';t.style.color='#3C373B';
+    }
+  });
+  var pct=Math.round((done/chkItems.length)*100);
+  $('chk-bar').style.width=pct+'%';
+  $('chk-lbl').textContent=done+' de '+chkItems.length+' verificados';
+  $('chk-pct').textContent=pct+'%';
+};
+
+var faqData=[
+  {q:'¿Cuándo es el mejor momento para implementar protección de superficies?',a:'El momento óptimo es en la fase de planeación y cotización, antes de que entren los primeros gremios. Si ya está en etapa de instalaciones o acabados, el protocolo sigue siendo aplicable, pero la ventana para proteger lo más costoso se reduce con cada semana que pasa.'},
+  {q:'¿Qué pasa si el subcontratista que causó el daño no acepta la responsabilidad?',a:'Sin protocolo documentado, no hay forma de asignar responsabilidad operativa. Con cláusula escrita en el contrato hay un referente concreto al que recurrir. El documento define quién tiene razón con base en hechos verificables, no en memoria.'},
+  {q:'¿Vale la pena proteger en obras pequeñas o de presupuesto ajustado?',a:'En proyectos pequeños, un solo retrabajo no planeado puede representar un porcentaje mayor del margen total que en uno grande. El protocolo mínimo no requiere materiales costosos: requiere definir qué se protege, con qué y quién es responsable.'},
+  {q:'¿Cómo verifico la compatibilidad del material con el acabado?',a:'La regla: verificar compatibilidad antes de aplicar, optar por materiales de baja adherencia en acabados de alto valor y hacer una prueba en zona no visible antes de cubrir la superficie completa. Nunca cinta de alto adhesivo sobre laca nueva.'},
+  {q:'¿Qué diferencia hay entre contrato llave en mano y por administración?',a:'En llave en mano, el contratista general responde por el estado de los acabados en la entrega, independientemente del subcontratista que causó el daño. En administración, la responsabilidad es ambigua: sin cláusula explícita en cada contrato, el daño se convierte en conflicto entre gremios que puede tardar semanas en resolverse.'},
+  {q:'¿Con cuánta anticipación debo pedir los materiales de protección?',a:'Para obras residenciales estándar, 5 a 7 días hábiles antes de la instalación del primer acabado fino. En obras comerciales con superficies especiales, 10 a 15 días hábiles para garantizar disponibilidad del material correcto.'}
+];
+var faqEl=$('cpv-faq');
+faqData.forEach(function(item,i){
+  var div=document.createElement('div');
+  div.style.borderTop=i===0?'none':'1px solid #E8E8E8';
+  div.innerHTML='<button onclick="cpvFaq('+i+')" id="fb'+i+'" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Poppins,Arial,sans-serif;font-size:15px;font-weight:600;color:#3C373B" onmouseover="this.style.background=\'#F7F7F7\'" onmouseout="this.style.background=\'transparent\'">'
+    +'<span>'+item.q+'</span>'
+    +'<i class="ti ti-chevron-down" id="fi'+i+'" style="font-size:18px;color:#B4B2A9;flex-shrink:0;transition:transform .25s"></i>'
+    +'</button>'
+    +'<div id="fb'+i+'b" style="max-height:0;overflow:hidden;transition:max-height .32s ease">'
+    +'<p style="padding:0 20px 18px;font-size:14px;color:#6F6A6D;line-height:1.75">'+item.a+'</p>'
+    +'</div>';
+  faqEl.appendChild(div);
+});
+window.cpvFaq=function(i){
+  var body=$('fb'+i+'b'),icon=$('fi'+i);
+  var open=body.style.maxHeight&&body.style.maxHeight!=='0px';
+  for(var j=0;j<faqData.length;j++){
+    var b=$('fb'+j+'b'),ic=$('fi'+j);
+    if(b){b.style.maxHeight='0';}
+    if(ic){ic.style.transform='';}
+  }
+  if(!open){body.style.maxHeight=body.scrollHeight+'px';icon.style.transform='rotate(180deg)';}
+};
+
+var cntEls=document.querySelectorAll('#cpv-counters [data-target]');
+var cntStarted=false;
+var cntObs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting&&!cntStarted){
+      cntStarted=true;
+      cntEls.forEach(function(el){
+        var target=parseFloat(el.dataset.target),suffix=el.dataset.suffix||'',t0=null,dur=1400;
+        function step(ts){
+          if(!t0)t0=ts;
+          var p=Math.min((ts-t0)/dur,1),ease=1-Math.pow(1-p,3);
+          var cur=target%1!==0?(ease*target).toFixed(1):Math.floor(ease*target);
+          el.textContent=cur+suffix;
+          if(p<1)requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+  });
+},{threshold:0.3});
+if(cntEls[0])cntObs.observe(cntEls[0].parentElement);
+
+})();
+</script>
+
+</article>
+
+
+</body></html>
