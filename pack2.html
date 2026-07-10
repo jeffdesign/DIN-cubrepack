@@ -79,6 +79,8 @@
           --cp-orange: #e65100;
           --cp-kraft-tint: #f4ecdf;
           --cp-amber-tint: #fceee0;
+          --cp-red: #dc2e2e;
+          --cp-grey: #555659;
           --cp-radius: 8px;
           --cp-radius-lg: 12px;
           --cp-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -146,7 +148,7 @@
    CONTAINER / BANDS
 ══════════════════════════════════════ */
         .cp2-container {
-          max-width: 1040px;
+          max-width: 1200px;
           margin: 0 auto;
           padding: 3.2rem 1.4rem;
         }
@@ -155,20 +157,30 @@
           border-top: 1px solid var(--cp-border);
         }
         .cp2-band-hero {
-          background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+          background-color: var(--cp-grey);
+          background-image: url(./assets/hero-bg.webp);
           border-top: none;
+          background-position: center;
+          background-size: cover;
+          background-blend-mode: multiply;
+        }
+        .cp2-band-hero > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 80vh;
         }
         .cp2-band-white {
           background: #ffffff;
         }
         .cp2-band-soft {
-          background: #f4f4f4;
+          background: var(--cp-grey);
         }
         .cp2-band-kraft {
-          background: var(--cp-kraft-tint);
+          background: var(--white);
         }
         .cp2-band-amber {
-          background: var(--cp-amber-tint);
+          background: var(--cp-black);
         }
         .cp2-band-ink {
           background: var(--cp-black);
@@ -240,7 +252,7 @@
           border-bottom: 1px solid var(--cp-border);
         }
         .cp2-header-inner {
-          max-width: 1040px;
+          max-width: 1200px;
           margin: 0 auto;
           padding: 0.85rem 1.4rem;
           display: flex;
@@ -1428,7 +1440,7 @@
         .cp-flow-title-text {
           font-size: 0.82rem;
           font-weight: 700;
-          color: var(--cp-dark);
+          color: var(--white);
         }
         .cp-flow-pct {
           font-size: 0.78rem;
@@ -2164,14 +2176,21 @@
                 cp2Jump('cp2-top');
                 return false;
               "
-              ><span class="cp2-brand-mark"><i class="ti ti-target"></i></span
-              >Cubre<span class="cp2-brand-accent">Pack</span></a
-            >
+              ><img src="./assets/logo.svg" alt=""
+            /></a>
             <nav class="cp2-main-links">
+              <a
+                href="#cp2-stats-sec"
+                onclick="
+                  cp2Jump('cp2-stats-sec');
+                  return false;
+                "
+                >Costo</a
+              >
               <a
                 href="#cp2-calc"
                 onclick="
-                  cp2Jump('cp2-calc');
+                  cp2Jump('cp2-stats-sec');
                   return false;
                 "
                 >Calculadora</a
@@ -2201,17 +2220,25 @@
                 >Instalación</a
               >
               <a
-                href="#cp2-faq"
+                href="#cp2-checklist"
                 onclick="
-                  cp2Jump('cp2-faq');
+                  cp2Jump('cp2-checklist');
                   return false;
                 "
-                >Preguntas</a
+                >Checklist</a
+              >
+              <a
+                href="#cp2-calibres"
+                onclick="
+                  cp2Jump('cp2-calibres');
+                  return false;
+                "
+                >Calibres</a
               >
             </nav>
             <div class="cp2-header-right">
               <a href="https://cubrepack.com.mx/contacto/" class="cp-btn"
-                ><i class="ti ti-headset"></i><span> Cotizar</span></a
+                ><span> Cotizar</span></a
               >
               <button
                 class="cp2-burger"
@@ -2298,81 +2325,30 @@
             >
           </div>
         </header>
-        <nav class="cp2-navrow" id="cp2-nav">
-          <button
-            class="cp2-navchip"
-            data-target="cp2-stats-sec"
-            onclick="cp2Jump('cp2-stats-sec')"
-          >
-            <i class="ti ti-report-money"></i> Costo
-          </button>
-          <button
-            class="cp2-navchip"
-            data-target="cp2-calc"
-            onclick="cp2Jump('cp2-calc')"
-          >
-            <i class="ti ti-calculator"></i> Calculadora
-          </button>
-          <button
-            class="cp2-navchip"
-            data-target="cp2-danos"
-            onclick="cp2Jump('cp2-danos')"
-          >
-            <i class="ti ti-alert-triangle"></i> Daños
-          </button>
-          <button
-            class="cp2-navchip"
-            data-target="cp2-comparador"
-            onclick="cp2Jump('cp2-comparador')"
-          >
-            <i class="ti ti-git-compare"></i> Materiales
-          </button>
-          <button
-            class="cp2-navchip"
-            data-target="cp2-instalacion"
-            onclick="cp2Jump('cp2-instalacion')"
-          >
-            <i class="ti ti-clipboard-list"></i> Instalación
-          </button>
-          <button
-            class="cp2-navchip"
-            data-target="cp2-checklist"
-            onclick="cp2Jump('cp2-checklist')"
-          >
-            <i class="ti ti-clipboard-check"></i> Checklist
-          </button>
-          <button
-            class="cp2-navchip"
-            data-target="cp2-calibres"
-            onclick="cp2Jump('cp2-calibres')"
-          >
-            <i class="ti ti-ruler-2"></i> Calibres
-          </button>
-        </nav>
       </div>
 
       <section class="cp2-band cp2-band-hero" id="cp2-top">
         <div class="cp2-container">
-          <span class="cp2-eyebrow"
+          <span class="cp2-eyebrow" style="color: var(--cp-white)"
             ><span class="cp2-eyebrow-ic"
               ><i class="ti ti-building-warehouse"></i></span
             >Guía técnica · Contratistas y arquitectos</span
           >
-          <h1>
+          <h1 style="color: var(--cp-white)">
             Guía completa: protección de pisos en obra sin arruinar tus acabados
           </h1>
-          <p>
+          <p style="color: var(--cp-white)">
             Si ya tienes el piso instalado y todavía quedan semanas de obra
             encima, este es el momento en que más puedes perder.
           </p>
-          <p>
+          <p style="color: var(--cp-white)">
             Un piso de porcelanato rectificado, mármol o madera puede dañarse en
             horas. Un rayón de escalera metálica, una mancha de cemento que
             fraguó, una microfractura bajo el paso de una carretilla — ninguno
             de esos daños avisa cuando ocurre. Todos se cobran cuando el
             proyecto ya está en etapa de entrega.
           </p>
-          <p>
+          <p style="color: var(--cp-white)">
             Esta guía explica qué daños ocurren realmente sin protección, por
             qué los sustitutos más usados fallan, y cuál es el estándar técnico
             correcto para proteger pisos en obra activa en México.
@@ -2862,15 +2838,15 @@
 
       <section class="cp2-band cp2-band-soft" id="cp2-comparador">
         <div class="cp2-container cp2-reveal">
-          <span class="cp2-eyebrow"
+          <span class="cp2-eyebrow" style="color: var(--cp-white);"
             ><span class="cp2-eyebrow-ic"
               ><i class="ti ti-git-compare"></i></span
             >Materiales</span
           >
-          <h2>
+          <h2 style="color: var(--cp-white);">
             Lona, plástico o cartón plastificado: qué funciona y qué falla
           </h2>
-          <p>
+          <p style="color: var(--cp-white);">
             Hay tres materiales que se usan habitualmente para proteger pisos en
             obra en México. Dos de ellos fallan de forma predecible. El tercero
             es el único que resuelve el problema técnicamente.
@@ -3065,14 +3041,14 @@
       </section>
 
       <section class="cp2-band cp2-band-amber" id="cp2-instalacion">
-        <div class="cp2-container cp2-reveal">
+        <div class="cp2-container cp2-reveal"  style="color: var(--cp-white);">
           <span class="cp2-eyebrow"
             ><span class="cp2-eyebrow-ic"
               ><i class="ti ti-clipboard-list"></i></span
             >Instalación</span
           >
-          <h2>Cómo instalar cartón plastificado paso a paso</h2>
-          <p>
+          <h2 style="color: var(--cp-white);">Cómo instalar cartón plastificado paso a paso</h2>
+          <p style="color: var(--cp-white);">
             La instalación correcta es simple, pero específica. Haz clic en cada
             paso para marcarlo como completado.
           </p>
@@ -3258,12 +3234,12 @@
 
       <section class="cp2-band cp2-band-soft" id="cp2-calibres">
         <div class="cp2-container cp2-reveal">
-          <span class="cp2-eyebrow"
+          <span class="cp2-eyebrow" style="color: var(--cp-white);"
             ><span class="cp2-eyebrow-ic"><i class="ti ti-ruler-2"></i></span
             >Calibres</span
           >
-          <h2>¿Qué calibre necesito según el tipo de obra?</h2>
-          <p>
+          <h2 style="color: var(--cp-white);">¿Qué calibre necesito según el tipo de obra?</h2>
+          <p style="color: var(--cp-white);">
             Petropack ofrece dos calibres: 8 y 16. Selecciona tu tipo de obra
             para ver la comparativa detallada.
           </p>
@@ -3502,12 +3478,12 @@
 
       <section class="cp2-band cp2-band-soft" id="cp2-faq">
         <div class="cp2-container cp2-reveal">
-          <span class="cp2-eyebrow"
+          <span class="cp2-eyebrow" style="color: var(--cp-white);"
             ><span class="cp2-eyebrow-ic"
               ><i class="ti ti-help-circle"></i></span
             >Preguntas</span
           >
-          <h2>Preguntas frecuentes sobre protección de pisos en obra</h2>
+          <h2 style="color: var(--cp-white);">Preguntas frecuentes sobre protección de pisos en obra</h2>
           <div
             class="cp2-faq-acc"
             id="cp2-faq-acc"
@@ -3553,8 +3529,7 @@
                 cp2Jump('cp2-top');
                 return false;
               "
-              ><span class="cp2-brand-mark"><i class="ti ti-target"></i></span
-              >Cubre<span class="cp2-brand-accent">Pack</span></a
+              ><img src="./assets/logo.svg" alt=""></a
             >
             <p class="cp2-footer-tag">
               Protección de superficies para obra: cartón plastificado, foam y
@@ -4270,4 +4245,4 @@
       </script>
     </article>
   </body>
-</html>
+</html
